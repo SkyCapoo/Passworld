@@ -1,0 +1,23 @@
+--啓動密碼
+function CETrainer_CEButton8Click(sender)
+passwordvape = getProperty(CETrainer_CEEdit2,"text")
+if(passwordvape == "Sky]{CapooKN%r1d913")then
+CETrainer_CEEdit2.Visible = false
+CETrainer_CEButton8.Visible = false
+CETrainer_CEButton7.Visible = true
+CETrainer_CELabel83.Visible = true
+CETrainer_CECustomButton3.Visible = false
+CETrainer_CECustomButton4.Visible = false
+showMessage("VIP密碼正確 ！")
+vip = 1
+return end
+if(passwordvape == "capoo2dc@l9ivo12")then
+CETrainer_CEEdit2.Visible = false
+CETrainer_CEButton8.Visible = false
+CETrainer_CEButton7.Visible = true
+showMessage("密碼正確 ！")
+vip = 0
+else
+showMessage("密碼錯誤  ")
+end
+end
