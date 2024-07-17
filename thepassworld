@@ -1,7 +1,7 @@
 --啓動密碼
 function CETrainer_CEButton8Click(sender)
 passwordvape = getProperty(CETrainer_CEEdit2,"text")
-if(passwordvape == "Sky-z&^hj349gj#@")then
+if(passwordvape == "Sky-çÆ-poo133rtjbß")then
 CETrainer_CEEdit2.Visible = false
 CETrainer_CEButton8.Visible = false
 CETrainer_CEButton7.Visible = true
