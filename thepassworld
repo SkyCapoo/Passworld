@@ -1,23 +1,25 @@
---啓動密碼
-function CETrainer_CEButton8Click(sender)
-passwordvape = getProperty(CETrainer_CEEdit2,"text")
-if(passwordvape == "Sky-çÆ-poo133rtjbß")then
-CETrainer_CEEdit2.Visible = false
-CETrainer_CEButton8.Visible = false
-CETrainer_CEButton7.Visible = true
-CETrainer_CELabel83.Visible = true
-CETrainer_CECustomButton3.Visible = false
-CETrainer_CECustomButton4.Visible = false
-showMessage("VIP密碼正確 ！")
-vip = 1
-return end
-if(passwordvape == "capoo2dc@l9ivo12")then
-CETrainer_CEEdit2.Visible = false
-CETrainer_CEButton8.Visible = false
-CETrainer_CEButton7.Visible = true
-showMessage("密碼正確 ！")
-vip = 0
-else
-showMessage("密碼錯誤  ")
-end
+-- 混淆后的代码示例
+local a,b,c,d,e,f,g,h,i,j; a=showMessage; b=getProperty; c="text"; d="Sky-ßpr-2onDi5ck"; e="capoo3dc@l9ivo12"; f=false; g=true; h="VIP密碼正確 ！"; i="密碼正確 ！"; j="密碼錯誤  "
+function CETrainer_CEButton8Click(k)
+    local l=b(CETrainer_CEEdit2,c)
+    if(l==d)then
+        CETrainer_CEEdit2.Visible=f
+        CETrainer_CEButton8.Visible=f
+        CETrainer_CEButton7.Visible=g
+        CETrainer_CELabel83.Visible=g
+        CETrainer_CECustomButton3.Visible=f
+        CETrainer_CECustomButton4.Visible=f
+        a(h)
+        vip=1
+        return
+    end
+    if(l==e)then
+        CETrainer_CEEdit2.Visible=f
+        CETrainer_CEButton8.Visible=f
+        CETrainer_CEButton7.Visible=g
+        a(i)
+        vip=0
+    else
+        a(j)
+    end
 end
