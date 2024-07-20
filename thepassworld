@@ -1,5 +1,7 @@
 -- 混淆后的代码示例
-local a,b,c,d,e,f,g,h,i,j; a=showMessage; b=getProperty; c="text"; d="Sky-ßpr-2onDi5ck"; e="capoo3dc@l9ivo12"; f=false; g=true; h="VIP密碼正確 ！"; i="密碼正確 ！"; j="密碼錯誤  "
+local obfuscatedCode = 'local a,b,c,d,e,f,g,h,i,j; a=showMessage; b=getProperty; c="text"; d="Sky-ßpr-2onDi5ck"; e="capoo3dc@l9ivo12"; f=false; g=true; h="VIP密碼正確 ！"; i="密碼正確 ！"; j="密碼錯誤  "'
+local compiledCode = loadstring(obfuscatedCode)
+compiledCode()
 function CETrainer_CEButton8Click(k)
     local l=b(CETrainer_CEEdit2,c)
     if(l==d)then
