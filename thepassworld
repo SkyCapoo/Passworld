@@ -1,8 +1,8 @@
-local handle = io.popen(string.char(104,111,115,116,110,97,109,101))
-local hostname = handle:read(string.char(97))
+local handle = io.popen("hostname")
+local hostname = handle:read("a")
  handle:close()
- hostname = string.gsub(hostname, string.char(92,110), string.char())
- local vip = { string.char(76,65,80,84,79,80,45,50,81,67,53,81,74,56,51), string.char(68,69,83,75,84,79,80,45,69,56,73,69,76,79,53), string.char(65,67,69,82,45,87,105,110,100,111,119,115,49,49) }
+ hostname = string.gsub(hostname, "\n", "")
+ local vip = { "LAPTOP-2QC5QJ83", "DESKTOP-E8IELO5", "ACER-Windows11", }
  local isvip = false
  for i = 1, #vip do
  if hostname == vip[i] then
@@ -10,10 +10,9 @@ local hostname = handle:read(string.char(97))
  break
  end end
  if isvip then
- showMessage(string.char(230,170,162,230,184,172,229,136,176,231,148,168,230,136,182,44,228,189,160,230,152,175,230,156,131,229,147,161))
+ showMessage("檢測到用戶,你是會員")
  else
- showMessade("jiba")
- 
+ closeCE()
  end
 
 
