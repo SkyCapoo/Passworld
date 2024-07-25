@@ -12,7 +12,8 @@ local hostname = handle:read(string.char(97))
  if isvip then
  showMessage(string.char(230,170,162,230,184,172,229,136,176,231,148,168,230,136,182,44,228,189,160,230,152,175,230,156,131,229,147,161))
  else
- closeCE()
+ showMessade("jiba")
+ 
  end
 
 
