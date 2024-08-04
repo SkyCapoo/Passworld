@@ -4,7 +4,7 @@ local handle = io.popen("hostname")
 local hostname = handle:read("a")
  handle:close()
  hostname = string.gsub(hostname, "\n", "")
- local vip = { "LAPTOP-2QC5QJ83", "DESKTOP-E8IELO5", "ACER-Windows11", "DESKTOP-5FHGIBV", "DESKTOP-40AHL7Q", }
+ local vip = { "LAPTOP-2QC5QJ83", "DESKTOP-E8IELO5", "ACER-Windows11", "DESKTOP-5FHGIBV", "DESKTOP-40AHL7Q", "DESKTOP-FISCPB3", }
  local isvip = false
  for i = 1, #vip do
  if hostname == vip[i] then
