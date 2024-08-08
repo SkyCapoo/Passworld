@@ -14,6 +14,10 @@ local hostname = handle:read("a")
  if isvip then
  showMessage("檢測到用戶,你是會員")
 else
+if (getProcessIDFromProcessName("MiniGameApp.exe") == nil) then
+messageDialog("ERROR: 請先開啓游戲",mtError)
+ closeCE()
+return end
 if isvip == false then
  miniuid = readInteger("[[libiworld.g_nHomeGardenSaveVersion+424]+0C]+0")
  vipuid = {1088712050,1089142268,1251995024,1300614537}
