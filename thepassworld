@@ -1,3 +1,4 @@
+
 PROCESS_NAME = 'MiniGameApp.exe'
 if not openProcess(PROCESS_NAME) then
     messageDialog("错误: 无法找到应用程序，请重新打开", mtError)
@@ -68,7 +69,7 @@ for i = 1, #vipUIDs do
     end
 end
 
-if isVipUID then
+if isVipUID or isVip then
 
 else
     messageDialog("错误: 玩家ID不正确!", mtError)
