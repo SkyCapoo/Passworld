@@ -69,8 +69,8 @@ for i = 1, #vipUIDs do
     end
 end
 
-if isVipUID or isVip then
-
+if isVipUID then
+elseif isVip then
 else
     messageDialog("错误: 玩家ID不正确!", mtError)
     closeCE()
