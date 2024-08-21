@@ -36,7 +36,7 @@ end
 local hostname = getHostname()
 
 if hostname then
-    local isVip = isHostnameVip(hostname)
+    isVip = isHostnameVip(hostname)
 
     if isVip then
 
