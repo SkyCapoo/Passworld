@@ -2168,8 +2168,15 @@ showMessage = ("請關閉手動發言循環顔色再使用")
 return end
 xchat = getAddressList().getMemoryRecordByDescription("發言noob script")
   xchat.Active = true
-
+sleep(10)
+  xchat.Active = false
+sleep(10)
+  xchat.Active = true
 xchatie = getAddressList().getMemoryRecordByDescription("申請发言内容")
+  xchatie.Active = true
+sleep(10)
+  xchatie.Active = false
+sleep(10)
   xchatie.Active = true
 sleep(10)
 Colorrrd = getAddressList().getMemoryRecordByDescription("noob顔色")
@@ -2213,9 +2220,17 @@ CETrainer_CECheckbox40.Checked = false
 
 xchat = getAddressList().getMemoryRecordByDescription("發言noob script")
   xchat.Active = true
+sleep(10)
+  xchat.Active = false
+sleep(10)
+  xchat.Active = true
 xchatie = getAddressList().getMemoryRecordByDescription("申請发言内容")
   xchatie.Active = true
-sleep(50)
+sleep(10)
+  xchatie.Active = false
+sleep(10)
+  xchatie.Active = true
+sleep(10)
 Colorrrd = getAddressList().getMemoryRecordByDescription("noob顔色")
 noobie = getAddressList().getMemoryRecordByDescription("noobie内容")
 sleep(20)
@@ -4587,15 +4602,7 @@ end
 end
 
 
-function CETrainer_CECheckbox102Click(sender)
-if(CETrainer_CECheckbox102.Checked == true)then
-autoreadystart = getAddressList().getMemoryRecordByDescription("循環執行預備開始call")
-  autoreadystart.Value = 1
-else
-autoreadystart = getAddressList().getMemoryRecordByDescription("循環執行預備開始call")
-  autoreadystart.Value = 0
-end
-end
+
 
 
 function CETrainer_CEButton17Click(sender)
@@ -4889,7 +4896,6 @@ showMessage("請關閉循環準備開始功能再使用")
 return end
 readystart = getAddressList().getMemoryRecordByDescription("執行預備開始call")
  readystart.Active = false
-sleep(1000)
   readystart.Active = true
 end
 
